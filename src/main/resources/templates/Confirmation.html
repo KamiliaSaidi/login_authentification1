@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>Customers</title>
+<form th:action=@{save} method="post">
+
+	<fieldset>
+		<legend>Confirmation</legend>
+		<!-- Titre du fieldset -->
+		<div>
+			<label for="name">Name</label> 
+			<label 
+				th:text=${customer.name} ></label> 
+		</div>
+		<div>
+			<label for="address">Address</label> 
+			<label 
+				th:text=${customer.address} ></label> 
+		</div>
+		<div>
+			<label for="phone">Phone</label>
+			<label 
+				th:text=${customer.phone} ></label> 
+		</div>
+		<div>
+			<label for="birth">Date of birth</label> 
+			<label 
+				th:text=${customer.birth} ></label> 
+		</div>
+	
+
+	</fieldset>
+
+
+</form>
+<!-- <body> -->
+<!-- 	<h3>Test</h3> -->
+<!-- 	<table border="1"> -->
+<!-- 		<thead> -->
+<!-- 		<tr> -->
+<!-- 		<th>ID</th><th>Name</th><th>Adress</th><th>Phone</th><th>Birth</th> -->
+<!-- 		</tr> -->
+<!-- 		</thead> -->
+<!-- 		<tbody> -->
+
+<!-- 		<tr th:each="c:${listCustomers}"> -->
+<!-- 		<td th:text="${c.id}"></td> -->
+<!-- 		<td th:text="${c.name}"></td> -->
+<!-- 		<td th:text="${c.address}"></td> -->
+<!-- 		<td th:text="${c.phone}"></td> -->
+<!-- 		<td th:text="${c.birth}"></td> -->
+
+<!-- <!-- 		</tr> -->
+-->
+<!-- 		</tbody> -->
+
+<!-- 	</table> -->
+<!-- </body> -->
+</html>

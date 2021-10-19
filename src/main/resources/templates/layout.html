@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html
+xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8">
+<title>Customer Management</title>
+</head>
+<body>
+<li>
+<span th:inline="text">
+[[${#httpServletRequest.remoteUser}]]</span>
+<a th:href=@{/login?logout}" th:inline="text">
+Logout</a>
+</li>
+</body>
+</html>
